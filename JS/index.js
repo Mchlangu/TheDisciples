@@ -4,7 +4,7 @@ var quiz = {
     // Q = QUESTION, O = OPTIONS, A = CORRECT ANSWER
         data: [
 
-            {   q: "Where is Elone Musk from?",
+            {   q: "Where is Elon Musk from?",
                 o: ["Nigeria", "South Africa", "USA", "UK"],
                 a: 1, // arrays start with 0, so answer is 70meters
             },

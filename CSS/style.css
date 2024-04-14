@@ -2,15 +2,14 @@
 #quizWrap {
     max-width: 600px;
     margin: 0 auto;
-    /* RECOMMENDED FIXED HEIGHT IF YOU HAVE CONTENT BELOW
-THE QUIZ */
+    /* RECOMMENDED FIXED HEIGHT IF YOU HAVE CONTENT BELOW THE QUIZ */
     /* SO THAT PAGE LAYOUT DOES NOT "JUMP" */
     /* height: 250px; */
 }
   /* (B) QUESTION */
   #quizQn {
     padding: 20px;
-    background: #4c93ba;
+    background: #303436;
     color: #fff;
     font-size: 24px;
     border-radius: 10px;
@@ -35,11 +34,11 @@ THE QUIZ */
   }
   #quizAns label.correct {
     background: #d8ffc4;
-    border: 1px solid #60a03f;
+    border: 1px solid #41c002;
   }
   #quizAns label.wrong {
     background: #ffe8e8;
-    border: 1px solid #c78181;
+    border: 1px solid #ff0000;
 }
 /* (X) DOES NOT MATTER - COSMETICS */ /* PAGE & BODY */
 *{
@@ -51,12 +50,13 @@ THE QUIZ */
     display: flex;
     align-items: center; justify-content: center;
     min-height: 100vh;
-    background-image: linear-gradient(rgb(20, 2, 2), rgba(29, 73, 80, 0.1)), url('bmw.jpg');
+    background-image: linear-gradient(rgba(13, 13, 13, 0.356), rgba(255, 255, 255, 0.1)), url(user-img.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.76);
 }
 
 /* WIDGET */
@@ -80,5 +80,65 @@ THE QUIZ */
     color: #fff;
 }
 
+h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6%;
+  padding: 40px 100px;
+  z-index: 100000;
+}
+
+header.sticky {
+  padding: 5px 100px;
+  background: #ffffffa4;
+}
+
+header .Logo {
+  position: relative;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
 
 
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  margin: 3 15px;
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 10px;
+  font-weight: 500px;
+  transition: 0.6s;
+}
+
+
+header.sticky .Logo,
+header.sticky ul li a {
+    color: #000000e2;
+}
