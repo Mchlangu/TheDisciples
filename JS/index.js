@@ -14,14 +14,15 @@ var quiz = {
                 a: 2,
             },
 
-            { q: "What is the currency of Japan",
-            o: ["ZAR", "YEN", "Dollar", "Pounds"],
-            a: 1,
+            { 
+                q: "What is the currency of Japan",
+                o: ["ZAR", "YEN", "Dollar", "Pounds"],
+                a: 1,
             },
             {
-            q: "Who painted the Mona Lisa",
-            o: ["Michelangelo", "Georges Seurat", "Vincent van Gogh", "Leonardo da Vinci"],
-            a: 3,
+                q: "Who painted the Mona Lisa",
+                o: ["Michelangelo", "Georges Seurat", "Vincent van Gogh", "Leonardo da Vinci"],
+                a: 3,
             },
 
         ],
